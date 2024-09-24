@@ -1,0 +1,84 @@
+.banner{
+    background-image: url("../Banner/bannaer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+  }
+  .banner-btn {
+    all: unset;
+    background: linear-gradient(90deg, darkblue 20%, rgb(83, 67, 205) 80%);
+    font-size: 25px;
+    color: white;
+    padding: 3px 20px;
+
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  .banner-heading h1{
+    font-size: 55px;
+    line-height: 1.3;
+  }
+
+  /* .From Uiverse.io by zjssun  */
+  .more button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+   
+    transition: 0.5s ease;
+    user-select: none;
+    border: 3px solid transparent;
+    background: linear-gradient(#000, #000) padding-box, /* button's own background */
+    linear-gradient(90deg, #8738D5, #5C42F3, #24A0EE) border-box;
+  
+  }
+  
+  .more button:hover,
+  :focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+      0 0 100px #008cff;
+  }
+  
+  @media (max-width: 576px) {
+    .more button{
+      width: 100%; /* Ensure full width on small screens */
+    }
+    .banner-heading h1{
+        font-size: 20px;
+        line-height: 1.3;
+      }
+      .banner-btn {
+        all: unset;
+        background: linear-gradient(90deg, darkblue 20%, rgb(83, 67, 205) 80%);
+        font-size: 15px;
+        color: white;
+        padding: 3px 20px;
+        margin-top: 3%;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+      }
+  }  
+  @media (max-width: 1000px) {
+    .more button{
+       width: 300px;/* Ensure full width on small screens */
+      }
+  }
