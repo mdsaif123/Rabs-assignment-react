@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 import logo from '../assets/logo.png';
 import callslogo from "../assets/call.png"
@@ -21,25 +22,25 @@ const Navbar = () => {
       {/* Center: NavLinks */}
       <ul className="navbar-nav mx-auto  ">
         <li className="nav-item">
-          <a className="nav-link mx-2" href="#">Home</a>
+          <Link className="nav-link mx-2" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-2" href="#">Overview</a>
+          <Link className="nav-link mx-2"  to="/overview">Overview</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-2" href="#">Services</a>
+          <Link className="nav-link mx-2"  to="/services">Services</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-2" href="#">Our Approach</a>
+          <Link className="nav-link mx-2"  to="/approach">Our Approach</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-2" href="#">Review</a>
+          <Link className="nav-link mx-2"  to="/review">Review</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-2" href="#">About Us</a>
+          <Link className="nav-link mx-2" to ="/about">About Us</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link mx-2" href="#">FAQ</a>
+          <Link className="nav-link mx-2"  to="/faq">FAQ</Link>
         </li>
       </ul>
       {/* Right: Search input */}

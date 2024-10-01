@@ -1,5 +1,6 @@
 .banner{
-    background-image: url("../Banner/bannaer.png");
+  background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url("../Banner/bannaer.png");
+    /* background-image: url("../Banner/bannaer.png"); */
     background-repeat: no-repeat;
     background-size: cover;
    position: relative;

@@ -1,94 +1,87 @@
 import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Industry = () => {
   return (
     <div>
       <div className="industry">
-        <h1 className="text-center text-white">Industries <span className="text-warning bold">We've</span>  Worked For</h1>
-        <div className="row">
-            <div className="col-md-4">
-            <div className="card-container">
-          <main>
-            <div className="card">
+        <h1 className="text-center text-white">
+          Industries <span className="text-warning bold">We've</span> Worked For
+        </h1>
+        <OwlCarousel
+          className="owl-theme"
+          loop
+          nav={true}
+          dots={true}
+          items={3}
+          margin={10}
+          responsive={{
+            0: {
+              items: 1,  // Full width for small screens (like col-12)
+            },
+            600: {
+              items: 2,  // Show 2 items for medium-sized screens
+            },
+            1000: {
+              items: 3,  // Show 3 items for large screens
+            },
+          }}
+        >
+          <div className="item">
+            <div className="">
               <img
-                src="https://englishpluspodcast.com/wp-content/uploads/2023/05/Access-to-Education.jpg"
-                alt
+                src="https://prefecturespg.com/wp-content/uploads/2021/08/New-Teaching-and-Learning-Styles.jpg"
+                alt="Placeholder Image"
               />
-              <div className="card-content">
-                <h2>Education Technology</h2>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt exercitationem iste, voluptatum, quia explicabo
-                  laboriosam rem adipisci voluptates cumque, veritatis atque
-                  nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-                </p>
-                <a href="#" className="button">
-                  Find out more
-                  <span className="material-symbols-outlined">
-                    arrow_right_alt
-                  </span>
-                </a>
+              <div className="info">
+                <h2>Education</h2>
+                <p>Here is a short description that appears on hover.</p>
               </div>
             </div>
-          </main>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="card-container">
-          <main>
-            <div className="card">
+          </div>
+
+          <div className="item">
+            <div className="">
               <img
-                src="https://wallpapercave.com/wp/wp7845825.jpg"
-                alt
+                src="https://www.studying-in-uk.org/wp-content/uploads/2018/09/accounting-and-finances.jpg"
+                alt="Placeholder Image"
               />
-              <div className="card-content">
-                <h2>Food Industry</h2>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt exercitationem iste, voluptatum, quia explicabo
-                  laboriosam rem adipisci voluptates cumque, veritatis atque
-                  nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-                </p>
-                <a href="#" className="button">
-                  Find out more
-                  <span className="material-symbols-outlined">
-                    arrow_right_alt
-                  </span>
-                </a>
+              <div className="info">
+                <h2>Finance</h2>
+                <p>Here is a short description that appears on hover.</p>
               </div>
             </div>
-          </main>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="card-container">
-          <main>
-            <div className="card">
+          </div>
+
+          <div className="item">
+            <div className="">
               <img
-                src="https://miro.medium.com/max/11232/1*Xx9dIim-_cfYtg8N69jIWg.jpeg"
-                alt
+                src="https://www.itcilo.org/sites/default/files/courses/cover-images/A9016137.jpeg"
+                alt="Placeholder Image"
               />
-              <div className="card-content">
-                <h2>TeleCommunication</h2>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt exercitationem iste, voluptatum, quia explicabo
-                  laboriosam rem adipisci voluptates cumque, veritatis atque
-                  nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
-                </p>
-                <a href="#" className="button">
-                  Find out more
-                  <span className="material-symbols-outlined">
-                    arrow_right_alt
-                  </span>
-                </a>
+              <div className="info">
+                <h2>Technology</h2>
+                <p>Here is a short description that appears on hover.</p>
               </div>
             </div>
-          </main>
+          </div>
+          <div className="item">
+            <div className="">
+              <img
+                src="https://www.itcilo.org/sites/default/files/courses/cover-images/A9016137.jpeg"
+                alt="Placeholder Image"
+              />
+              <div className="info">
+                <h2>Technology</h2>
+                <p>Here is a short description that appears on hover.</p>
+              </div>
             </div>
-        </div>
-      
-        </div>
+          </div>
+          
+          {/* Add more items as needed */}
+        </OwlCarousel>
       </div>
     </div>
   );

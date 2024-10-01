@@ -1,15 +1,21 @@
 import React from "react";
 import "./Banner.css";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+
 const Banner = () => {
+  AOS.init();
   return (
     <div>
       <div className="banner">
-        <div className="text-center pt-5 pb-3">
+        <div className="text-center mt-4 pt-5 pb-3">
           <button className="banner-btn">Let's Discuss Your Project</button>
         </div>
         <div className="container">
-          <div className="row text-center text-white banner-heading">
-            <h1 className="">
+          <div  className="row text-center text-white banner-heading" >
+            <h1  className="">
               Elevate Your <span className="bold"> Digital Presence</span>
             </h1>
             <h1>
